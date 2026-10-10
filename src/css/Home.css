@@ -6,7 +6,7 @@
 
 .search-form {
   max-width: 600px;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1rem;
   display: flex;
   gap: 1rem;
   padding: 0 1rem;
@@ -42,14 +42,19 @@
   background-color: #f40612;
 }
 
-
 @media (max-width: 639px) {
   .home {
     padding: 1rem 0;
   }
 
   .search-form {
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem !important;
+    flex-direction: column !important;
+    gap: 0.5rem;
+  }
+
+  .search-button {
+    width: 100% !important;
   }
 }
 
